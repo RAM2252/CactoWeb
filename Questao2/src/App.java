@@ -11,7 +11,7 @@ public class App {
         int ordem_nota;
         String ordem_nome;
 
-                while(tarefa_finalizada == false){
+                    do{
                     System.out.println("Acrescente o nome do aluno:");
                     String nome = entrada.next();
                     Nome_aluno.add(nome);
@@ -22,15 +22,12 @@ public class App {
                     
                     System.out.println("Deseja colocar mais um aluno?(y/n)");
                     String fim = entrada.next();
+                    if(fim.equals("n")){
+                        tarefa_finalizada = true;
+                    }
+                    }while(tarefa_finalizada == false);
                         
-                        if(fim.equals("n")){
-                            tarefa_finalizada = true;
-                        }
-
-                }
-                int loop;
-
-                for(loop = 0;loop < Nota_aluno.size()-1;loop++){
+                for(int loop = 0;loop < Nota_aluno.size()-1;loop++){
                       
                         for(int j=0; j < Nota_aluno.size() - 1;j++){
                             int nota1 = Integer.parseInt( Nota_aluno.get(j));
