@@ -9,7 +9,7 @@ const rotasFilmes = Router()
 
 rotasFilmes.post('/', criarFilme)
 rotasFilmes.get('/', listarFilmes)
-rotasFilmes.get('/filmeId', buscarFilmePorID)
+rotasFilmes.get('/:filmeId', buscarFilmePorID)
 rotasFilmes.delete('/:filmeId', deletarFilmes)
 rotasFilmes.patch('/:filmeId', atualizarFilme)
 export {rotasFilmes}

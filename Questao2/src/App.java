@@ -11,21 +11,21 @@ public class App {
         int ordem_nota;
         String ordem_nome;
 
-                    do{
-                    System.out.println("Acrescente o nome do aluno:");
-                    String nome = entrada.next();
-                    Nome_aluno.add(nome);
+            do{
+                System.out.println("Acrescente o nome do aluno:");
+                String nome = entrada.next();
+                Nome_aluno.add(nome);
 
-                    System.out.println("coloque aqui a nota do aluno:");
-                    String nota = entrada.next();
-                    Nota_aluno.add(nota);
+                System.out.println("coloque aqui a nota do aluno:");
+                String nota = entrada.next();
+                Nota_aluno.add(nota);
                     
-                    System.out.println("Deseja colocar mais um aluno?(y/n)");
-                    String fim = entrada.next();
-                    if(fim.equals("n")){
-                        tarefa_finalizada = true;
+                System.out.println("Deseja colocar mais um aluno?(y/n)");
+                String fim = entrada.next();
+                if(fim.equals("n")){
+                    tarefa_finalizada = true;
                     }
-                    }while(tarefa_finalizada == false);
+                }while(tarefa_finalizada == false);
                         
                 for(int loop = 0;loop < Nota_aluno.size()-1;loop++){
                       
