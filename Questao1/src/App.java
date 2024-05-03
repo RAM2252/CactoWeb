@@ -10,7 +10,7 @@ public class App {
             Scanner analise = new Scanner(System.in);
             System.out.println("Digite o numero que sera ordenado");
             String lista[] = analise.nextLine().split("");
-
+            analise.close();
             try{
                 for(int i = 0; i < lista.length; i++ ){
                     if(Integer.parseInt(lista[i]) < base){
